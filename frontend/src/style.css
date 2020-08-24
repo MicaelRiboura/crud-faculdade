@@ -1,0 +1,166 @@
+:root{
+    --bg-primary: #080b1c;
+    --bg-secondary: #11162c;
+    --bg-highlight: #35489c;
+    --button-primary: #035bd9;
+    --button-secondary: #2a3b71;
+    --button-primary-hover: rgba(3, 91, 217, 0.3);
+    --button-secondary-hover: rgba(42, 59, 113, 0.3);
+    --bg-table: #172447;
+    --bg-modal: #ffffff;
+    --text-color-modal: #23275e;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+ body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 32px;
+    background-color: var(--bg-primary);
+}
+
+.btn-primary{
+    background-color: var(--button-primary);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-primary:hover{
+    background-color: var(--button-primary-hover);
+}
+
+.btn-secondary{
+    background-color: var(--button-secondary);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-secondary:hover{
+    background-color: var(--button-secondary-hover);
+}
+
+.btn-whatsapp{
+    background-color: rgb(6, 187, 60);
+    padding: 8px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-whatsapp:hover{
+    background-color: rgb(0, 143, 43);
+}
+.btn-whatsapp img{
+    height: 15px;
+}
+
+.btn:hover{
+    background-color: var(--button-primary);
+}
+
+.container{
+    background: var(--bg-secondary);
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.container .table{
+    background-color: var(--bg-table);
+    color: #fff;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px;
+    border-bottom: 1px solid var(--bg-secondary);
+    transition: .4s;
+}
+
+.highlight{
+    background: var(--bg-highlight);
+}
+
+.row:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.row-head{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: var(--bg-primary);
+    
+}
+
+#register{
+    height: 100vh;
+    padding: 20px;
+}
+
+h1{
+    font-size: 70px;
+    color:#fff;
+}
+
+#register form input{
+    color:#fff;
+    padding: 8px;
+    display: block;
+    margin: 15px 0;
+    /* border-radius: 10px; */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+
+.logo{
+    height: 40px;
+}

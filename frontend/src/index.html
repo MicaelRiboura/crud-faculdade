@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos - UNISUAM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/images/coruja.png" alt="logo unisuam">
+        <a href="#register" class="btn-primary" id="botaoCadastrar">Cadastrar Novo</a>
+    </header>
+    <div class="container" id="home">
+        <div class="table">
+            <div class="row-head">
+                <div class="col">Nome</div>
+                <div class="col"> E-mail</div>
+                <div class="col"> Whatsapp</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="register">
+        <form name="registerForm" method="post" action="http://localhost:3001/alunos">
+            <h1>Cadastro</h1>
+            <input name="nome" type="text" placeholder="Nome">
+            <input name="email" type="text" placeholder="E-mail">
+            <input name="whatsapp" type="text" placeholder="Whatsapp">
+            <div class="button-group">
+                <button class="btn-primary">Salvar</button>
+                <a href="#" class="btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+    <script src="events.js"></script>
+</body>
+
+</html>
