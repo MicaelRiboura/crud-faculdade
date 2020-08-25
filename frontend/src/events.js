@@ -5,7 +5,7 @@ const cancelButton = document.querySelector('.btn-secondary')
 
 
 
-//AJAX para renderixar os dados na tabela
+//AJAX para renderizar os dados na tabela
 fetch(url).then(resp => resp.json())
     .then(alunos => {
         const linhas = alunos.reduce(
