@@ -7,6 +7,7 @@ const botaoCancelar = document.querySelector('.btn-secondary')
 
 const initialState = {
     aluno: {
+        id:'',
         nome: '',
         email: '',
         whatsapp: ''
@@ -77,12 +78,13 @@ function atualizarCampos(id) {
 document.registerForm.onsubmit = async function (evento) {
     evento.preventDefault()
     atualizarEstado()
-    console.log(state)
+
     const aluno = state.aluno
     const method = aluno.id ? 'put' : 'post'
+    console.log(state)
     console.log(method)
-    const url = aluno.id ? `${baseURL}/${aluno.id}` : baseURL
-    console.log(new URLSearchParams(aluno))
+    const url = aluno.id!='' ? `${baseURL}/${aluno.id}` : baseURL
+
     fetch(url, {
         method,
         body: new URLSearchParams(aluno)
@@ -143,6 +145,7 @@ document.registerForm.onsubmit = async function (evento) {
 
 //Evento de Cancelar
 botaoCancelar.addEventListener('click', () => {
+    state.aluno.id = ''
     formulario.ident.value = ''
     formulario.nome.value = ''
     formulario.email.value = ''
