@@ -75,7 +75,7 @@ function atualizarCampos(id) {
 }
 
 //Salvar POST e PUT
-document.registerForm.onsubmit = async function (evento) {
+document.registerForm.onsubmit = function (evento) {
     evento.preventDefault()
     atualizarEstado()
 
