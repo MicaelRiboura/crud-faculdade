@@ -114,7 +114,7 @@ header{
 
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 8px;
     border-bottom: 1px solid var(--bg-secondary);
     transition: .4s;
@@ -130,7 +130,7 @@ header{
 }
 .row-head{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -163,4 +163,42 @@ h1{
 
 .logo{
     height: 40px;
+}
+
+.none{
+    display: none;
+}
+
+.btn-delete{
+    background-color: rgb(197, 10, 10);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-delete:hover{
+    background-color: rgba(197, 10, 10,0.7);
+}
+
+.btn-edit{
+    background-color: rgb(238, 167, 15);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-edit:hover{
+    background-color: rgba(238, 167, 15, 0.7);
 }
